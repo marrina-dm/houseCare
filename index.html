@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>House Care</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/styles/hover-min.css">
+    <link rel="stylesheet" href="dist/styles/magnific-popup.css">
+    <link
+            rel="stylesheet"
+            href="dist/styles/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="dist/styles/animate.min.css">
+    <link rel="stylesheet" href="dist/styles/style.min.css">
+</head>
+<body>
+
+<section class="main">
+    <header class="header">
+        <div class="container">
+            <button class="btn header-burger btn-icon">
+                <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 7C3 6.44771 3.44772 6 4 6H24C24.5523 6 25 6.44771 25 7C25 7.55229 24.5523 8 24 8H4C3.44772 8 3 7.55229 3 7Z"/>
+                    <path d="M3 14C3 13.4477 3.44772 13 4 13H24C24.5523 13 25 13.4477 25 14C25 14.5523 24.5523 15 24 15H4C3.44772 15 3 14.5523 3 14Z"/>
+                    <path d="M4 20C3.44772 20 3 20.4477 3 21C3 21.5523 3.44772 22 4 22H24C24.5523 22 25 21.5523 25 21C25 20.4477 24.5523 20 24 20H4Z"/>
+                </svg>
+            </button>
+            <a href="#" class="logo">
+                <img src="src/images/logo.png" alt="Логотип House Care">
+            </a>
+            <div class="phone header-phone">
+                <p class="phone-number">+380 (96) 73-67-281</p>
+                <button class="btn order-phone btn-to-consultation">
+                    <img src="src/images/phone.png" alt="Заказать звонок">
+                    <span class="phone-text">Заказать звонок</span>
+                </button>
+            </div>
+
+            <nav class="menu">
+                <div class="menu-container">
+                    <button class="btn menu-close btn-icon" id="menu-close">
+                        <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                    d="M764.288 214.592 512 466.88 259.712 214.592a31.936 31.936 0 0 0-45.12 45.12L466.752 512 214.528 764.224a31.936 31.936 0 1 0 45.12 45.184L512 557.184l252.288 252.288a31.936 31.936 0 0 0 45.12-45.12L557.12 512.064l252.288-252.352a31.936 31.936 0 1 0-45.12-45.184z"/>
+                        </svg>
+                    </button>
+                    <h2 class="title menu-title">Меню</h2>
+                    <ul class="menu-list">
+                        <li class="list-item">
+                            <a href="#catalog">Каталог</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#technologies">Технологии</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#projects">Наши проекты</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#steps">Производство</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#">Гарантия</a>
+                        </li>
+                        <li class="list-item">
+                            <a href="#">Отзывы</a>
+                        </li>
+                    </ul>
+                    <div class="social social-menu">
+                        <ul class="social-list">
+                            <li class="social-item">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="instagram" viewBox="0 0 448 512">
+                                        <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a href="#">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="telegram" viewBox="0 0 50 50">
+                                        <path d="M 44.376953 5.9863281 C 43.889905 6.0076957 43.415817 6.1432497 42.988281 6.3144531 C 42.565113 6.4845113 40.128883 7.5243408 36.53125 9.0625 C 32.933617 10.600659 28.256963 12.603668 23.621094 14.589844 C 14.349356 18.562196 5.2382813 22.470703 5.2382812 22.470703 L 5.3046875 22.445312 C 5.3046875 22.445312 4.7547875 22.629122 4.1972656 23.017578 C 3.9185047 23.211806 3.6186028 23.462555 3.3730469 23.828125 C 3.127491 24.193695 2.9479735 24.711788 3.015625 25.259766 C 3.2532479 27.184511 5.2480469 27.730469 5.2480469 27.730469 L 5.2558594 27.734375 L 14.158203 30.78125 C 14.385177 31.538434 16.858319 39.792923 17.402344 41.541016 C 17.702797 42.507484 17.984013 43.064995 18.277344 43.445312 C 18.424133 43.635633 18.577962 43.782915 18.748047 43.890625 C 18.815627 43.933415 18.8867 43.965525 18.957031 43.994141 C 18.958531 43.994806 18.959437 43.99348 18.960938 43.994141 C 18.969579 43.997952 18.977708 43.998295 18.986328 44.001953 L 18.962891 43.996094 C 18.979231 44.002694 18.995359 44.013801 19.011719 44.019531 C 19.043456 44.030655 19.062905 44.030268 19.103516 44.039062 C 20.123059 44.395042 20.966797 43.734375 20.966797 43.734375 L 21.001953 43.707031 L 26.470703 38.634766 L 35.345703 45.554688 L 35.457031 45.605469 C 37.010484 46.295216 38.415349 45.910403 39.193359 45.277344 C 39.97137 44.644284 40.277344 43.828125 40.277344 43.828125 L 40.310547 43.742188 L 46.832031 9.7519531 C 46.998903 8.9915162 47.022612 8.334202 46.865234 7.7402344 C 46.707857 7.1462668 46.325492 6.6299361 45.845703 6.34375 C 45.365914 6.0575639 44.864001 5.9649605 44.376953 5.9863281 z M 44.429688 8.0195312 C 44.627491 8.0103707 44.774102 8.032983 44.820312 8.0605469 C 44.866523 8.0881109 44.887272 8.0844829 44.931641 8.2519531 C 44.976011 8.419423 45.000036 8.7721605 44.878906 9.3242188 L 44.875 9.3359375 L 38.390625 43.128906 C 38.375275 43.162926 38.240151 43.475531 37.931641 43.726562 C 37.616914 43.982653 37.266874 44.182554 36.337891 43.792969 L 26.632812 36.224609 L 26.359375 36.009766 L 26.353516 36.015625 L 23.451172 33.837891 L 39.761719 14.648438 A 1.0001 1.0001 0 0 0 38.974609 13 A 1.0001 1.0001 0 0 0 38.445312 13.167969 L 14.84375 28.902344 L 5.9277344 25.849609 C 5.9277344 25.849609 5.0423771 25.356927 5 25.013672 C 4.99765 24.994652 4.9871961 25.011869 5.0332031 24.943359 C 5.0792101 24.874869 5.1948546 24.759225 5.3398438 24.658203 C 5.6298218 24.456159 5.9609375 24.333984 5.9609375 24.333984 L 5.9941406 24.322266 L 6.0273438 24.308594 C 6.0273438 24.308594 15.138894 20.399882 24.410156 16.427734 C 29.045787 14.44166 33.721617 12.440122 37.318359 10.902344 C 40.914175 9.3649615 43.512419 8.2583658 43.732422 8.1699219 C 43.982886 8.0696253 44.231884 8.0286918 44.429688 8.0195312 z M 33.613281 18.792969 L 21.244141 33.345703 L 21.238281 33.351562 A 1.0001 1.0001 0 0 0 21.183594 33.423828 A 1.0001 1.0001 0 0 0 21.128906 33.507812 A 1.0001 1.0001 0 0 0 20.998047 33.892578 A 1.0001 1.0001 0 0 0 20.998047 33.900391 L 19.386719 41.146484 C 19.35993 41.068197 19.341173 41.039555 19.3125 40.947266 L 19.3125 40.945312 C 18.800713 39.30085 16.467362 31.5161 16.144531 30.439453 L 33.613281 18.792969 z M 22.640625 35.730469 L 24.863281 37.398438 L 21.597656 40.425781 L 22.640625 35.730469 z"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="social-item">
+                                <a href="#">
+                                    <svg class="youtube" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                                        <path d="M 24.402344 9 C 17.800781 9 11.601563 9.5 8.300781 10.199219 C 6.101563 10.699219 4.199219 12.199219 3.800781 14.5 C 3.402344 16.898438 3 20.5 3 25 C 3 29.5 3.398438 33 3.898438 35.5 C 4.300781 37.699219 6.199219 39.300781 8.398438 39.800781 C 11.902344 40.5 17.898438 41 24.5 41 C 31.101563 41 37.097656 40.5 40.597656 39.800781 C 42.800781 39.300781 44.699219 37.800781 45.097656 35.5 C 45.5 33 46 29.402344 46.097656 24.902344 C 46.097656 20.402344 45.597656 16.800781 45.097656 14.300781 C 44.699219 12.101563 42.800781 10.5 40.597656 10 C 37.097656 9.5 31 9 24.402344 9 Z M 24.402344 11 C 31.601563 11 37.398438 11.597656 40.199219 12.097656 C 41.699219 12.5 42.898438 13.5 43.097656 14.800781 C 43.699219 18 44.097656 21.402344 44.097656 24.902344 C 44 29.199219 43.5 32.699219 43.097656 35.199219 C 42.800781 37.097656 40.800781 37.699219 40.199219 37.902344 C 36.597656 38.601563 30.597656 39.097656 24.597656 39.097656 C 18.597656 39.097656 12.5 38.699219 9 37.902344 C 7.5 37.5 6.300781 36.5 6.101563 35.199219 C 5.300781 32.398438 5 28.699219 5 25 C 5 20.398438 5.402344 17 5.800781 14.902344 C 6.101563 13 8.199219 12.398438 8.699219 12.199219 C 12 11.5 18.101563 11 24.402344 11 Z M 19 17 L 19 33 L 33 25 Z M 21 20.402344 L 29 25 L 21 29.597656 Z"></path>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="phone menu-phone">
+                        <p class="phone-number">+380 (96) 73-67-281</p>
+                        <button class="btn order-phone btn-to-consultation">
+                            <img src="src/images/phone.png" alt="Заказать звонок">
+                            <span class="phone-text">Заказать звонок</span>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="promo">
+        <div class="container wow animate__slideInUp">
+            <div class="main-info">
+                <h1 class="title promo-title">Строительство домов и коттеджей под ключ</h1>
+                <p class="promo-text">Сможете переехать в готовый дом уже через 3 месяца</p>
+                <button class="btn cons-btn btn-to-consultation">
+                    Узнать подробнее
+                </button>
+            </div>
+            <div class="action hvr-hang">
+                <a href="#projects" class="leaf-down">
+                    <svg id="left-arrow" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <style>.cls-1 {
+                                stroke-linecap: round;
+                                stroke-linejoin: round;
+                                stroke-width: 2px;
+                            }</style>
+                        </defs>
+                        <title/>
+                        <g id="arrow-left">
+                            <line class="cls-1" x1="3" x2="29" y1="16" y2="16"/>
+                            <line class="cls-1" x1="3" x2="7" y1="16" y2="11"/>
+                            <line class="cls-1" x1="3" x2="7" y1="16" y2="21"/>
+                        </g>
+                    </svg>
+                    <span>Листайте вниз</span>
+                </a>
+            </div>
+            <div class="social promo-social">
+                <ul class="social-list">
+                    <li class="social-item">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="instagram" viewBox="0 0 448 512">
+                                <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="telegram" viewBox="0 0 50 50">
+                                <path d="M 44.376953 5.9863281 C 43.889905 6.0076957 43.415817 6.1432497 42.988281 6.3144531 C 42.565113 6.4845113 40.128883 7.5243408 36.53125 9.0625 C 32.933617 10.600659 28.256963 12.603668 23.621094 14.589844 C 14.349356 18.562196 5.2382813 22.470703 5.2382812 22.470703 L 5.3046875 22.445312 C 5.3046875 22.445312 4.7547875 22.629122 4.1972656 23.017578 C 3.9185047 23.211806 3.6186028 23.462555 3.3730469 23.828125 C 3.127491 24.193695 2.9479735 24.711788 3.015625 25.259766 C 3.2532479 27.184511 5.2480469 27.730469 5.2480469 27.730469 L 5.2558594 27.734375 L 14.158203 30.78125 C 14.385177 31.538434 16.858319 39.792923 17.402344 41.541016 C 17.702797 42.507484 17.984013 43.064995 18.277344 43.445312 C 18.424133 43.635633 18.577962 43.782915 18.748047 43.890625 C 18.815627 43.933415 18.8867 43.965525 18.957031 43.994141 C 18.958531 43.994806 18.959437 43.99348 18.960938 43.994141 C 18.969579 43.997952 18.977708 43.998295 18.986328 44.001953 L 18.962891 43.996094 C 18.979231 44.002694 18.995359 44.013801 19.011719 44.019531 C 19.043456 44.030655 19.062905 44.030268 19.103516 44.039062 C 20.123059 44.395042 20.966797 43.734375 20.966797 43.734375 L 21.001953 43.707031 L 26.470703 38.634766 L 35.345703 45.554688 L 35.457031 45.605469 C 37.010484 46.295216 38.415349 45.910403 39.193359 45.277344 C 39.97137 44.644284 40.277344 43.828125 40.277344 43.828125 L 40.310547 43.742188 L 46.832031 9.7519531 C 46.998903 8.9915162 47.022612 8.334202 46.865234 7.7402344 C 46.707857 7.1462668 46.325492 6.6299361 45.845703 6.34375 C 45.365914 6.0575639 44.864001 5.9649605 44.376953 5.9863281 z M 44.429688 8.0195312 C 44.627491 8.0103707 44.774102 8.032983 44.820312 8.0605469 C 44.866523 8.0881109 44.887272 8.0844829 44.931641 8.2519531 C 44.976011 8.419423 45.000036 8.7721605 44.878906 9.3242188 L 44.875 9.3359375 L 38.390625 43.128906 C 38.375275 43.162926 38.240151 43.475531 37.931641 43.726562 C 37.616914 43.982653 37.266874 44.182554 36.337891 43.792969 L 26.632812 36.224609 L 26.359375 36.009766 L 26.353516 36.015625 L 23.451172 33.837891 L 39.761719 14.648438 A 1.0001 1.0001 0 0 0 38.974609 13 A 1.0001 1.0001 0 0 0 38.445312 13.167969 L 14.84375 28.902344 L 5.9277344 25.849609 C 5.9277344 25.849609 5.0423771 25.356927 5 25.013672 C 4.99765 24.994652 4.9871961 25.011869 5.0332031 24.943359 C 5.0792101 24.874869 5.1948546 24.759225 5.3398438 24.658203 C 5.6298218 24.456159 5.9609375 24.333984 5.9609375 24.333984 L 5.9941406 24.322266 L 6.0273438 24.308594 C 6.0273438 24.308594 15.138894 20.399882 24.410156 16.427734 C 29.045787 14.44166 33.721617 12.440122 37.318359 10.902344 C 40.914175 9.3649615 43.512419 8.2583658 43.732422 8.1699219 C 43.982886 8.0696253 44.231884 8.0286918 44.429688 8.0195312 z M 33.613281 18.792969 L 21.244141 33.345703 L 21.238281 33.351562 A 1.0001 1.0001 0 0 0 21.183594 33.423828 A 1.0001 1.0001 0 0 0 21.128906 33.507812 A 1.0001 1.0001 0 0 0 20.998047 33.892578 A 1.0001 1.0001 0 0 0 20.998047 33.900391 L 19.386719 41.146484 C 19.35993 41.068197 19.341173 41.039555 19.3125 40.947266 L 19.3125 40.945312 C 18.800713 39.30085 16.467362 31.5161 16.144531 30.439453 L 33.613281 18.792969 z M 22.640625 35.730469 L 24.863281 37.398438 L 21.597656 40.425781 L 22.640625 35.730469 z"></path>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a href="#">
+                            <svg class="youtube" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                                <path d="M 24.402344 9 C 17.800781 9 11.601563 9.5 8.300781 10.199219 C 6.101563 10.699219 4.199219 12.199219 3.800781 14.5 C 3.402344 16.898438 3 20.5 3 25 C 3 29.5 3.398438 33 3.898438 35.5 C 4.300781 37.699219 6.199219 39.300781 8.398438 39.800781 C 11.902344 40.5 17.898438 41 24.5 41 C 31.101563 41 37.097656 40.5 40.597656 39.800781 C 42.800781 39.300781 44.699219 37.800781 45.097656 35.5 C 45.5 33 46 29.402344 46.097656 24.902344 C 46.097656 20.402344 45.597656 16.800781 45.097656 14.300781 C 44.699219 12.101563 42.800781 10.5 40.597656 10 C 37.097656 9.5 31 9 24.402344 9 Z M 24.402344 11 C 31.601563 11 37.398438 11.597656 40.199219 12.097656 C 41.699219 12.5 42.898438 13.5 43.097656 14.800781 C 43.699219 18 44.097656 21.402344 44.097656 24.902344 C 44 29.199219 43.5 32.699219 43.097656 35.199219 C 42.800781 37.097656 40.800781 37.699219 40.199219 37.902344 C 36.597656 38.601563 30.597656 39.097656 24.597656 39.097656 C 18.597656 39.097656 12.5 38.699219 9 37.902344 C 7.5 37.5 6.300781 36.5 6.101563 35.199219 C 5.300781 32.398438 5 28.699219 5 25 C 5 20.398438 5.402344 17 5.800781 14.902344 C 6.101563 13 8.199219 12.398438 8.699219 12.199219 C 12 11.5 18.101563 11 24.402344 11 Z M 19 17 L 19 33 L 33 25 Z M 21 20.402344 L 29 25 L 21 29.597656 Z"></path>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="projects" id="projects">
+    <div class="container">
+        <h2 class="title projects-title">Наши проекты</h2>
+        <div class="project">
+            <h3 class="project-title wow animate__slideInRight">Modern house 003</h3>
+            <div class="popup-gallery wow animate__slideInLeft">
+                <a href="dist/images/projects/main-1-zoom.png">
+                    <img src="dist/images/projects/main-1.png" alt="">
+                </a>
+                <a href="dist/images/projects/little-1-1-zoom.png">
+                    <img src="dist/images/projects/little-1-1.png" alt="">
+                </a>
+                <a href="dist/images/projects/little-1-2-zoom.png">
+                    <img src="dist/images/projects/little-1-2.png" alt="">
+                </a>
+                <a href="dist/images/projects/little-1-3-zoom.png">
+                    <img src="dist/images/projects/little-1-3.png" alt="">
+                </a>
+            </div>
+            <div class="project-info wow animate__slideInRight">
+                <p class="project-text">
+                    Этот проект представляет собой красивый и удобный одноэтажный дом с многоскатной кровлей, эркером и
+                    камином на террасе. Его внешний традиционный архитектурный стиль прекрасно сочетается с современной
+                    практичной планировкой интерьера.
+                </p>
+                <ul class="project-description">
+                    <li class="description-item">
+                        <span>134 м<sup>2</sup></span>
+                    </li>
+                    <li class="description-item">
+                        <span>4 спальни</span>
+                    </li>
+                    <li class="description-item">
+                        <span>2 санузла</span>
+                    </li>
+                </ul>
+                <div class="actions-btn">
+                    <button class="btn cons-btn btn-to-consultation">Получить консультацию</button>
+                    <a href="dist/files/Technical%20task.pdf" download class="cons-btn download-button">
+                        Скачать PDF-план проекта (2,5 мб)
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="project">
+            <h3 class="project-title wow animate__slideInLeft">Modern house 004</h3>
+            <div class="popup-gallery wow animate__slideInRight">
+                <a href="dist/images/projects/main-2-zoom.png">
+                    <img src="dist/images/projects/main-2.png" alt="">
+                </a>
+                <a href="dist/images/projects/little-1-1-zoom.png">
+                    <img src="dist/images/projects/little-1-1.png" alt="">
+                </a>
+                <a href="dist/images/projects/little-1-2-zoom.png">
+                    <img src="dist/images/projects/little-1-2.png" alt="">
+                </a>
+                <a href="dist/images/projects/little-1-3-zoom.png">
+                    <img src="dist/images/projects/little-1-3.png" alt="">
+                </a>
+            </div>
+            <div class="project-info wow animate__slideInLeft">
+                <p class="project-text">
+                    Компактный и функциональный дом подкупает простотой решений. Простая форма и двухскатная кровля
+                    позволяет вести строительство быстро и достаточно экономично. Комнаты сделаны максимально
+                    просторными за счет маленьких технических и коммуникационных помещений.
+                </p>
+                <ul class="project-description">
+                    <li class="description-item">
+                        <span>145 м<sup>2</sup></span>
+                    </li>
+                    <li class="description-item">
+                        <span>3 спальни</span>
+                    </li>
+                    <li class="description-item">
+                        <span>2 санузла</span>
+                    </li>
+                </ul>
+                <div class="actions-btn">
+                    <button class="btn cons-btn btn-to-consultation">Получить консультацию</button>
+                    <a href="dist/files/Technical%20task.pdf" download class="cons-btn download-button">
+                        Скачать PDF-план проекта (2,5 мб)
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="project project-more">
+            <h3 class="project-title wow animate__slideInRight">Modern house 005</h3>
+            <div class="popup-gallery wow animate__slideInLeft">
+                <a href="dist/images/projects/main-1-zoom.png">
+                    <img src="dist/images/projects/main-1.png" alt="">
+                </a>
+                <a href="dist/images/projects/little-1-1-zoom.png">
+                    <img src="dist/images/projects/little-1-1.png" alt="">
+                </a>
+                <a href="dist/images/projects/little-1-2-zoom.png">
+                    <img src="dist/images/projects/little-1-2.png" alt="">
+                </a>
+                <a href="dist/images/projects/little-1-3-zoom.png">
+                    <img src="dist/images/projects/little-1-3.png" alt="">
+                </a>
+            </div>
+            <div class="project-info wow animate__slideInRight">
+                <p class="project-text">
+                    Этот проект представляет собой красивый и удобный одноэтажный дом с многоскатной кровлей, эркером и
+                    камином на террасе. Его внешний традиционный архитектурный стиль прекрасно сочетается с современной
+                    практичной планировкой интерьера.
+                </p>
+                <ul class="project-description">
+                    <li class="description-item">
+                        <span>134 м<sup>2</sup></span>
+                    </li>
+                    <li class="description-item">
+                        <span>4 спальни</span>
+                    </li>
+                    <li class="description-item">
+                        <span>2 санузла</span>
+                    </li>
+                </ul>
+                <div class="actions-btn">
+                    <button class="btn cons-btn btn-to-consultation">Получить консультацию</button>
+                    <a href="dist/files/Technical%20task.pdf" download class="cons-btn download-button">
+                        Скачать PDF-план проекта (2,5 мб)
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="project project-more">
+            <h3 class="project-title wow animate__slideInLeft">Modern house 006</h3>
+            <div class="popup-gallery wow animate__slideInRight">
+                <a href="dist/images/projects/main-2-zoom.png">
+                    <img src="dist/images/projects/main-2.png" alt="">
+                </a>
+                <a href="dist/images/projects/little-1-1-zoom.png">
+                    <img src="dist/images/projects/little-1-1.png" alt="">
+                </a>
+                <a href="dist/images/projects/little-1-2-zoom.png">
+                    <img src="dist/images/projects/little-1-2.png" alt="">
+                </a>
+                <a href="dist/images/projects/little-1-3-zoom.png">
+                    <img src="dist/images/projects/little-1-3.png" alt="">
+                </a>
+            </div>
+            <div class="project-info wow animate__slideInLeft">
+                <p class="project-text">
+                    Компактный и функциональный дом подкупает простотой решений. Простая форма и двухскатная кровля
+                    позволяет вести строительство быстро и достаточно экономично. Комнаты сделаны максимально
+                    просторными за счет маленьких технических и коммуникационных помещений.
+                </p>
+                <ul class="project-description">
+                    <li class="description-item">
+                        <span>145 м<sup>2</sup></span>
+                    </li>
+                    <li class="description-item">
+                        <span>3 спальни</span>
+                    </li>
+                    <li class="description-item">
+                        <span>2 санузла</span>
+                    </li>
+                </ul>
+                <div class="actions-btn">
+                    <button class="btn cons-btn btn-to-consultation">Получить консультацию</button>
+                    <a href="dist/files/Technical%20task.pdf" download class="cons-btn download-button">
+                        Скачать PDF-план проекта (2,5 мб)
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="project project-more last">
+            <h3 class="project-title wow animate__slideInRight">Modern house 007</h3>
+            <div class="popup-gallery wow animate__slideInLeft">
+                <a href="dist/images/projects/main-1-zoom.png">
+                    <img src="dist/images/projects/main-1.png" alt="">
+                </a>
+                <a href="dist/images/projects/little-1-1-zoom.png">
+                    <img src="dist/images/projects/little-1-1.png" alt="">
+                </a>
+                <a href="dist/images/projects/little-1-2-zoom.png">
+                    <img src="dist/images/projects/little-1-2.png" alt="">
+                </a>
+                <a href="dist/images/projects/little-1-3-zoom.png">
+                    <img src="dist/images/projects/little-1-3.png" alt="">
+                </a>
+            </div>
+            <div class="project-info wow animate__slideInRight">
+                <p class="project-text">
+                    Этот проект представляет собой красивый и удобный одноэтажный дом с многоскатной кровлей, эркером и
+                    камином на террасе. Его внешний традиционный архитектурный стиль прекрасно сочетается с современной
+                    практичной планировкой интерьера.
+                </p>
+                <ul class="project-description">
+                    <li class="description-item">
+                        <span>134 м<sup>2</sup></span>
+                    </li>
+                    <li class="description-item">
+                        <span>4 спальни</span>
+                    </li>
+                    <li class="description-item">
+                        <span>2 санузла</span>
+                    </li>
+                </ul>
+                <div class="actions-btn">
+                    <button class="btn cons-btn btn-to-consultation">Получить консультацию</button>
+                    <a href="dist/files/Technical%20task.pdf" download class="cons-btn download-button">
+                        Скачать PDF-план проекта (2,5 мб)
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="action hvr-hang">
+            <button class="btn btn-icon" id="more-projects">
+                <span class="open-projects">Посмотреть ещё 3 проекта</span>
+                <svg class="down-arrow" viewBox="0 -4.5 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill-rule="evenodd">
+                        <g id="Dribbble-Light-Preview" transform="translate(-220.000000, -6684.000000)">
+                            <g id="icons" transform="translate(56.000000, 160.000000)">
+                                <path d="M164.292308,6524.36583 L164.292308,6524.36583 C163.902564,6524.77071 163.902564,6525.42619 164.292308,6525.83004 L172.555873,6534.39267 C173.33636,6535.20244 174.602528,6535.20244 175.383014,6534.39267 L183.70754,6525.76791 C184.093286,6525.36716 184.098283,6524.71997 183.717533,6524.31405 C183.328789,6523.89985 182.68821,6523.89467 182.29347,6524.30266 L174.676479,6532.19636 C174.285736,6532.60124 173.653152,6532.60124 173.262409,6532.19636 L165.705379,6524.36583 C165.315635,6523.96094 164.683051,6523.96094 164.292308,6524.36583"
+                                      id="arrow_down-[#338]">
+                                </path>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+            </button>
+        </div>
+    </div>
+</section>
+
+<section class="technologies" id="technologies">
+    <div class="container">
+        <h2 class="title technologies-title">Технологии строительства</h2>
+        <div class="house-technologies wow animate__fadeIn">
+            <div class="house-img">
+                <img src="dist/images/house.png" alt="Каркас дома">
+                <div class="dots dot1"></div>
+                <div class="dots dot2"></div>
+                <div class="dots dot3"></div>
+                <div class="dots dot4"></div>
+                <div class="dots dot5"></div>
+            </div>
+            <div class="house-info">
+                <div class="technology tech1">
+                    <h3 class="technology-title">Неразрывный каркас</h3>
+                    <p class="technology-text">
+                        Монтаж стен этажей внутри дома и по всему периметру выполняется единым массивом.
+                    </p>
+                </div>
+                <div class="technology tech2">
+                    <h3 class="technology-title">Диагональный раскос</h3>
+                    <p class="technology-text">
+                        Система диагональных раскосов позволяет создать оптимальный вентиляционный зазор для капитальных
+                        стен и наружной отделки
+                    </p>
+                </div>
+                <div class="technology tech3">
+                    <h3 class="technology-title">Сборка силовых узлов</h3>
+                    <p class="technology-text">
+                        Основные силовые узлы наших домов оцинкованы, что позволяет быть уверенными в исключительной
+                        прочности и долговечности конструкции
+                    </p>
+                </div>
+                <div class="technology tech4">
+                    <h3 class="technology-title">Плитная ветрозащита</h3>
+                    <p class="technology-text">
+                        Используемая влагостойкая ветрозащитная плита обеспечивает дополнительную шумоизоляцию стен
+                    </p>
+                </div>
+                <div class="technology tech5">
+                    <h3 class="technology-title">5 камерные окна</h3>
+                    <p class="technology-text">
+                        Обеспечивает исключительную сохранность тепла в доме
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="steps" id="steps">
+    <div class="container">
+        <h2 class="title steps-title">6 шагов к вашему новому дому</h2>
+        <ul class="steps-items wow animate__slideInUp">
+            <li class="step">
+                <span class="step-number">01</span>
+                <img src="dist/images/chat.png" alt="Чат" class="step-img">
+                <div class="step-info">
+                    <h3 class="step-title">Заявка на сайте</h3>
+                    <p class="step-text">
+                        Вы <span>оставляете заявку</span> на сайте, или звоните нам +380 (96) 73-67-281
+                    </p>
+                </div>
+            </li>
+            <li class="step">
+                <span class="step-number">02</span>
+                <img src="dist/images/phone-call.png" alt="Телефон" class="step-img">
+                <div class="step-info">
+                    <h3 class="step-title">Звонок менеджера</h3>
+                    <p class="step-text">
+                        Мы связываемся с вами для уточнения деталей и выбираем время для встречи
+                    </p>
+                </div>
+            </li>
+            <li class="step">
+                <span class="step-number">03</span>
+                <img src="dist/images/conference.png" alt="Конференция" class="step-img">
+                <div class="step-info">
+                    <h3 class="step-title">Встреча</h3>
+                    <p class="step-text">
+                        Встречаемся на вашем участке и делаем все необходимые замеры
+                    </p>
+                </div>
+            </li>
+            <li class="step">
+                <span class="step-number">04</span>
+                <img src="dist/images/contract.png" alt="Договор" class="step-img">
+                <div class="step-info">
+                    <h3 class="step-title">Договор</h3>
+                    <p class="step-text">
+                        Заключаем договор с четко указанными сроками
+                    </p>
+                </div>
+            </li>
+            <li class="step">
+                <span class="step-number">05</span>
+                <img src="dist/images/technics.png" alt="Строительство" class="step-img">
+                <div class="step-info">
+                    <h3 class="step-title">Строительство</h3>
+                    <p class="step-text">
+                        Наша бригада приступает к выполнению работ
+                    </p>
+                </div>
+            </li>
+            <li class="step">
+                <span class="step-number">06</span>
+                <img src="dist/images/house-icon.png" alt="Ваш дом" class="step-img">
+                <div class="step-info">
+                    <h3 class="step-title">Ваш дом</h3>
+                    <p class="step-text">
+                        Вы заезжаете в свой новый дом!
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<section class="catalog" id="catalog">
+    <div class="container">
+        <h2 class="title catalog-title">Построили более 200 домов за 10 лет</h2>
+        <div class="swiper mySwiper wow animate__fadeInBottomLeft">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="dist/images/slider/slider1.jpg" alt=""/>
+                    <div class="slide-content">
+                        <div class="content-info">
+                            <h3 class="content-info-title">Modern house 005</h3>
+                            <p class="address">Киевская обл., г. Борова, 15</p>
+                        </div>
+                        <dl class="content-character">
+                            <dd>Габариты:</dd>
+                            <dt>8,4 м Х 10,5 м</dt>
+                            <dd>Площадь:</dd>
+                            <dt>154 м<sup>2</sup></dt>
+                        </dl>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="dist/images/slider/slider2.jpg" alt=""/>
+                    <div class="slide-content">
+                        <div class="content-info">
+                            <h3 class="content-info-title">Modern house 006</h3>
+                            <p class="address">Киевская обл., г. Борова, 16</p>
+                        </div>
+                        <dl class="content-character">
+                            <dd>Габариты:</dd>
+                            <dt>8,4 м Х 10,5 м</dt>
+                            <dd>Площадь:</dd>
+                            <dt>134 м<sup>2</sup></dt>
+                        </dl>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="dist/images/slider/slider3.jpg" alt=""/>
+                    <div class="slide-content">
+                        <div class="content-info">
+                            <h3 class="content-info-title">Modern house 007</h3>
+                            <p class="address">Киевская обл., г. Борова, 17</p>
+                        </div>
+                        <dl class="content-character">
+                            <dd>Габариты:</dd>
+                            <dt>8,7 м Х 10,7 м</dt>
+                            <dd>Площадь:</dd>
+                            <dt>177 м<sup>2</sup></dt>
+                        </dl>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="dist/images/slider/slider4.jpg" alt=""/>
+                    <div class="slide-content">
+                        <div class="content-info">
+                            <h3 class="content-info-title">Modern house 003</h3>
+                            <p class="address">Киевская обл., г. Борова, 13</p>
+                        </div>
+                        <dl class="content-character">
+                            <dd>Габариты:</dd>
+                            <dt>8,4 м Х 13,5 м</dt>
+                            <dd>Площадь:</dd>
+                            <dt>153 м<sup>2</sup></dt>
+                        </dl>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="dist/images/slider/slider5.jpg" alt=""/>
+                    <div class="slide-content">
+                        <div class="content-info">
+                            <h3 class="content-info-title">Modern house 004</h3>
+                            <p class="address">Киевская обл., г. Борова, 14</p>
+                        </div>
+                        <dl class="content-character">
+                            <dd>Габариты:</dd>
+                            <dt>8,4 м Х 10,5 м</dt>
+                            <dd>Площадь:</dd>
+                            <dt>144 м<sup>2</sup></dt>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+
+<section class="guarantee">
+    <div class="container">
+        <h2 class="title guarantee-title">Гарантии и условия оплаты</h2>
+        <ul class="guarantee-square wow animate__slideInUp">
+            <li class="square-item">
+                <img src="dist/images/calendar.png" alt="Календарь" class="calendar">
+                <div class="square-info">
+                    <h3 class="square-title">Гарантия сроков</h3>
+                    <p class="square-text">
+                        Юридическая гарантия сроков. До 0.1 % от суммы за каждый день просрочки
+                    </p>
+                </div>
+            </li>
+            <li class="square-item">
+                <img src="dist/images/insurance.png" alt="Страховка" class="insurance">
+                <div class="square-info">
+                    <h3 class="square-title">Страховка</h3>
+                    <p class="square-text">
+                        Гарантия 10 лет. Страховка дома. Обработка дома. Сервисное обслуживание
+                    </p>
+                </div>
+            </li>
+        </ul>
+        <ul class="guarantee-circle wow animate__fadeInDown">
+            <li class="circle-item">
+                <div class="circle-image">
+                    <img src="dist/images/writing.png" alt="Договор">
+                </div>
+                <div class="circle-info">
+                    <h3 class="circle-title">Гарантия фиксированной сметы</h3>
+                    <p class="circle-text">
+                        Все непредсказуемые расходы компенсируем за свой счет
+                    </p>
+                </div>
+            </li>
+            <li class="circle-item">
+                <div class="circle-image">
+                    <img src="dist/images/people.png" alt="Люди">
+                </div>
+                <div class="circle-info">
+                    <h3 class="circle-title">Без посредников</h3>
+                    <p class="circle-text">
+                        Мы сами выполняем все работы и несем за них ответственность
+                    </p>
+                </div>
+            </li>
+            <li class="circle-item">
+                <div class="circle-image">
+                    <img src="dist/images/coin.png" alt="Оплата">
+                </div>
+                <div class="circle-info">
+                    <h3 class="circle-title">Оплата по факту</h3>
+                    <p class="circle-text">
+                        Оплата всех работ по факту их выполнения
+                    </p>
+                </div>
+            </li>
+        </ul>
+        <div class="guarantee-button">
+            <a href="dist/files/Technical%20task.pdf" download class="cons-btn download-button">
+                Скачать PDF-пример договора (1,3 мб)
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="consultation" id="consultation">
+    <div class="container">
+        <div class="consultation-image wow animate__backInLeft">
+            <img src="dist/images/consultation.png" alt="Дом">
+        </div>
+        <div class="consultation-info wow animate__backInRight">
+            <h2 class="title consultation-title">Получите индивидуальную консультацию</h2>
+            <form class="consultation-form">
+                <input type="text" class="base-input" placeholder="Ваше имя" id="name">
+                <div class="error-input">Необходимо ввести ваше имя</div>
+                <input type="tel" class="base-input" placeholder="Ваш телефон" id="phone">
+                <div class="error-input">Необходимо ввести ваш телефон</div>
+                <button type="button" class="btn cons-btn" id="consultation-btn">Нужна консультация</button>
+
+                <input type="checkbox" class="input-checkbox" id="checkbox">
+                <label for="checkbox" id="label">
+                    Нажимая на кнопку, я даю согласие на обработку персональных данных и соглашаюсь с
+                    <a href="#">политикой конфиденциальности</a>
+                </label>
+            </form>
+        </div>
+        <div class="success-message wow animate__backInUp">
+            Спасибо, мы свяжемся с вами в ближайшее время!
+        </div>
+    </div>
+</section>
+
+<section class="sign-in">
+    <div class="container wow animate__fadeIn">
+        <h2 class="title sign-in-title">Запишитесь на экскурсию</h2>
+        <p class="sign-in-text">
+            В готовые дома, чтобы лично убедиться в качестве нашей работы
+        </p>
+        <button class="btn cons-btn btn-sign-in">Записаться</button>
+        <img src="dist/images/location.png" class="location" id="location1" alt="Точки на карте">
+        <img src="dist/images/location.png" class="location" id="location2" alt="Точки на карте">
+        <img src="dist/images/location.png" class="location" id="location3" alt="Точки на карте">
+        <img src="dist/images/location.png" class="location" id="location4" alt="Точки на карте">
+        <img src="dist/images/location.png" class="location" id="location5" alt="Точки на карте">
+        <img src="dist/images/location.png" class="location" id="location6" alt="Точки на карте">
+        <img src="dist/images/location.png" class="location" id="location7" alt="Точки на карте">
+        <img src="dist/images/location.png" class="location" id="location8" alt="Точки на карте">
+        <img src="dist/images/location.png" class="location" id="location9" alt="Точки на карте">
+        <img src="dist/images/location.png" class="location" id="location10" alt="Точки на карте">
+        <img src="dist/images/location.png" class="location" id="location11" alt="Точки на карте">
+    </div>
+</section>
+
+
+<div class="popup">
+    <div class="container">
+        <div class="popup-container">
+            <button class="btn menu-close btn-icon" id="popup-close">
+                <svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                            d="M764.288 214.592 512 466.88 259.712 214.592a31.936 31.936 0 0 0-45.12 45.12L466.752 512 214.528 764.224a31.936 31.936 0 1 0 45.12 45.184L512 557.184l252.288 252.288a31.936 31.936 0 0 0 45.12-45.12L557.12 512.064l252.288-252.352a31.936 31.936 0 1 0-45.12-45.184z"/>
+                </svg>
+            </button>
+            <div class="popup-info">
+                <p class="popup-text">
+                    Пожалуйста, оставьте свои данные, чтобы мы могли связаться с вами и уточнить детали предстоящей
+                    экскурсии
+                </p>
+                <form class="consultation-form">
+                    <input type="text" class="popup-input" placeholder="Ваше имя" id="name-popup">
+                    <div class="error-input">Необходимо ввести ваше имя</div>
+                    <input type="tel" class="popup-input" placeholder="Ваш телефон" id="phone-popup">
+                    <div class="error-input">Необходимо ввести ваш телефон</div>
+                    <button type="button" class="btn cons-btn" id="consultation-btn-popup">Записаться</button>
+
+                    <input type="checkbox" class="input-checkbox" id="checkbox-popup">
+                    <label for="checkbox-popup" id="label-popup">
+                        Нажимая на кнопку, я даю согласие на обработку персональных данных и соглашаюсь с
+                        <a href="#">политикой конфиденциальности</a>
+                    </label>
+                </form>
+            </div>
+            <div class="success-message msg-popup">
+                Спасибо, мы свяжемся с вами в ближайшее время!
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-address">
+            <p class="address">г. Киев, бульвар Кольцова, 14-Ж</p>
+            <p class="schedule">Пн-Пт: 10:00 -19:00</p>
+        </div>
+        <div class="social social-menu">
+            <a href="#" class="logo">
+                <img src="src/images/logo.png" alt="Логотип House Care">
+            </a>
+            <ul class="social-list">
+                <li class="social-item">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="instagram" viewBox="0 0 448 512">
+                            <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="telegram" viewBox="0 0 50 50">
+                            <path d="M 44.376953 5.9863281 C 43.889905 6.0076957 43.415817 6.1432497 42.988281 6.3144531 C 42.565113 6.4845113 40.128883 7.5243408 36.53125 9.0625 C 32.933617 10.600659 28.256963 12.603668 23.621094 14.589844 C 14.349356 18.562196 5.2382813 22.470703 5.2382812 22.470703 L 5.3046875 22.445312 C 5.3046875 22.445312 4.7547875 22.629122 4.1972656 23.017578 C 3.9185047 23.211806 3.6186028 23.462555 3.3730469 23.828125 C 3.127491 24.193695 2.9479735 24.711788 3.015625 25.259766 C 3.2532479 27.184511 5.2480469 27.730469 5.2480469 27.730469 L 5.2558594 27.734375 L 14.158203 30.78125 C 14.385177 31.538434 16.858319 39.792923 17.402344 41.541016 C 17.702797 42.507484 17.984013 43.064995 18.277344 43.445312 C 18.424133 43.635633 18.577962 43.782915 18.748047 43.890625 C 18.815627 43.933415 18.8867 43.965525 18.957031 43.994141 C 18.958531 43.994806 18.959437 43.99348 18.960938 43.994141 C 18.969579 43.997952 18.977708 43.998295 18.986328 44.001953 L 18.962891 43.996094 C 18.979231 44.002694 18.995359 44.013801 19.011719 44.019531 C 19.043456 44.030655 19.062905 44.030268 19.103516 44.039062 C 20.123059 44.395042 20.966797 43.734375 20.966797 43.734375 L 21.001953 43.707031 L 26.470703 38.634766 L 35.345703 45.554688 L 35.457031 45.605469 C 37.010484 46.295216 38.415349 45.910403 39.193359 45.277344 C 39.97137 44.644284 40.277344 43.828125 40.277344 43.828125 L 40.310547 43.742188 L 46.832031 9.7519531 C 46.998903 8.9915162 47.022612 8.334202 46.865234 7.7402344 C 46.707857 7.1462668 46.325492 6.6299361 45.845703 6.34375 C 45.365914 6.0575639 44.864001 5.9649605 44.376953 5.9863281 z M 44.429688 8.0195312 C 44.627491 8.0103707 44.774102 8.032983 44.820312 8.0605469 C 44.866523 8.0881109 44.887272 8.0844829 44.931641 8.2519531 C 44.976011 8.419423 45.000036 8.7721605 44.878906 9.3242188 L 44.875 9.3359375 L 38.390625 43.128906 C 38.375275 43.162926 38.240151 43.475531 37.931641 43.726562 C 37.616914 43.982653 37.266874 44.182554 36.337891 43.792969 L 26.632812 36.224609 L 26.359375 36.009766 L 26.353516 36.015625 L 23.451172 33.837891 L 39.761719 14.648438 A 1.0001 1.0001 0 0 0 38.974609 13 A 1.0001 1.0001 0 0 0 38.445312 13.167969 L 14.84375 28.902344 L 5.9277344 25.849609 C 5.9277344 25.849609 5.0423771 25.356927 5 25.013672 C 4.99765 24.994652 4.9871961 25.011869 5.0332031 24.943359 C 5.0792101 24.874869 5.1948546 24.759225 5.3398438 24.658203 C 5.6298218 24.456159 5.9609375 24.333984 5.9609375 24.333984 L 5.9941406 24.322266 L 6.0273438 24.308594 C 6.0273438 24.308594 15.138894 20.399882 24.410156 16.427734 C 29.045787 14.44166 33.721617 12.440122 37.318359 10.902344 C 40.914175 9.3649615 43.512419 8.2583658 43.732422 8.1699219 C 43.982886 8.0696253 44.231884 8.0286918 44.429688 8.0195312 z M 33.613281 18.792969 L 21.244141 33.345703 L 21.238281 33.351562 A 1.0001 1.0001 0 0 0 21.183594 33.423828 A 1.0001 1.0001 0 0 0 21.128906 33.507812 A 1.0001 1.0001 0 0 0 20.998047 33.892578 A 1.0001 1.0001 0 0 0 20.998047 33.900391 L 19.386719 41.146484 C 19.35993 41.068197 19.341173 41.039555 19.3125 40.947266 L 19.3125 40.945312 C 18.800713 39.30085 16.467362 31.5161 16.144531 30.439453 L 33.613281 18.792969 z M 22.640625 35.730469 L 24.863281 37.398438 L 21.597656 40.425781 L 22.640625 35.730469 z"></path>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-item">
+                    <a href="#">
+                        <svg class="youtube" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                            <path d="M 24.402344 9 C 17.800781 9 11.601563 9.5 8.300781 10.199219 C 6.101563 10.699219 4.199219 12.199219 3.800781 14.5 C 3.402344 16.898438 3 20.5 3 25 C 3 29.5 3.398438 33 3.898438 35.5 C 4.300781 37.699219 6.199219 39.300781 8.398438 39.800781 C 11.902344 40.5 17.898438 41 24.5 41 C 31.101563 41 37.097656 40.5 40.597656 39.800781 C 42.800781 39.300781 44.699219 37.800781 45.097656 35.5 C 45.5 33 46 29.402344 46.097656 24.902344 C 46.097656 20.402344 45.597656 16.800781 45.097656 14.300781 C 44.699219 12.101563 42.800781 10.5 40.597656 10 C 37.097656 9.5 31 9 24.402344 9 Z M 24.402344 11 C 31.601563 11 37.398438 11.597656 40.199219 12.097656 C 41.699219 12.5 42.898438 13.5 43.097656 14.800781 C 43.699219 18 44.097656 21.402344 44.097656 24.902344 C 44 29.199219 43.5 32.699219 43.097656 35.199219 C 42.800781 37.097656 40.800781 37.699219 40.199219 37.902344 C 36.597656 38.601563 30.597656 39.097656 24.597656 39.097656 C 18.597656 39.097656 12.5 38.699219 9 37.902344 C 7.5 37.5 6.300781 36.5 6.101563 35.199219 C 5.300781 32.398438 5 28.699219 5 25 C 5 20.398438 5.402344 17 5.800781 14.902344 C 6.101563 13 8.199219 12.398438 8.699219 12.199219 C 12 11.5 18.101563 11 24.402344 11 Z M 19 17 L 19 33 L 33 25 Z M 21 20.402344 L 29 25 L 21 29.597656 Z"></path>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="phone footer-phone">
+            <p class="phone-number">+380 (96) 73-67-281</p>
+            <button class="btn order-phone btn-to-consultation">
+                <img src="src/images/phone.png" alt="Заказать звонок">
+                <span class="phone-text">Заказать звонок</span>
+            </button>
+        </div>
+    </div>
+</footer>
+
+<script src="dist/js/jquery-3.7.1.min.js"></script>
+<script src="dist/js/jquery.magnific-popup.min.js"></script>
+<script src="dist/js/swiper-bundle.min.js"></script>
+<script src="dist/js/jquery.inputmask.min.js"></script>
+<script src="dist/js/wow.min.js"></script>
+<script src="dist/js/script.js"></script>
+</body>
+</html>
