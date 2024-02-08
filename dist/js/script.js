@@ -62,13 +62,30 @@ $(document).ready(() => {
     let phoneInput = $('#phone');
     let formInputs = $('.base-input');
     let inputColor = formInputs.css('border-color');
+    let error = $('.error-input');
+    let label = $('#label');
+
+    formInputs.blur(function () {
+        error.hide();
+        formInputs.css('border-color', inputColor);
+        for (let input of formInputs) {
+            let element = $(input);
+            if (!element.val()) {
+                element.css('border-color', 'red');
+                element.next().show();
+            }
+        }
+
+        if (!checked) {
+            label.attr('invalid', 'true');
+        }
+    });
 
     $('#consultation-btn').click(function () {
         let hasError = false;
-        let label = $('#label');
         let checked = $('#checkbox').prop("checked");
 
-        $('.error-input').hide();
+        error.hide();
         formInputs.css('border-color', inputColor);
         label.attr('invalid', !checked);
 
@@ -97,7 +114,7 @@ $(document).ready(() => {
                 .done(function (msg) {
                     if (msg.success) {
                         $('.consultation-info').hide();
-                        $('.success-message').show();
+                        $('.msg').show();
                     } else {
                         alert('Возникла ошибка при оформлении консультации, позвоните нам и запишитесь на консультацию');
                         formInputs.val('');
@@ -113,21 +130,43 @@ $(document).ready(() => {
         $('.popup').show();
     });
 
+    let popupFormInputs = $('.popup-input');
+
     $('#popup-close').click(function () {
         $('.popup').hide();
+        $('.popup-info').show();
+        $('.msg-popup').hide();
+        popupFormInputs.val('');
+        $('#checkbox-popup').prop("checked", false);
     });
 
     let popupPhoneInput = $('#phone-popup');
-    let popupFormInputs = $('.popup-input');
     let popupInputColor = popupFormInputs.css('border-color');
+
+
+    popupFormInputs.blur(function () {
+        error.hide();
+        popupFormInputs.css('border-color', popupInputColor);
+        for (let input of popupFormInputs) {
+            let element = $(input);
+            if (!element.val()) {
+                element.css('border-color', 'red');
+                element.next().show();
+            }
+        }
+
+        if (!checked) {
+            label.attr('invalid', 'true');
+        }
+    });
 
     $('#consultation-btn-popup').click(function () {
         let hasError = false;
         let label = $('#label-popup');
         let checked = $('#checkbox-popup').prop("checked");
 
-        $('.error-input').hide();
-        popupFormInputs.css('border-color', inputColor);
+        error.hide();
+        popupFormInputs.css('border-color', popupInputColor);
         label.attr('invalid', !checked);
 
         for (let input of popupFormInputs) {
